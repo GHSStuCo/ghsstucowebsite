@@ -14,4 +14,4 @@ var2_name=var2_val
 # Template files
  * The template files go in the templates folder they have .thtml extensions. Whenever you want to use a variable use just type `{varname}`.
 
-To compile, navigate to the repository directory, and type make (in terminal)
+To compile, navigate to the repository directory, and type `make` (in terminal)
