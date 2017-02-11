@@ -4,11 +4,17 @@ Grinnell High School's Student Council Website.
 # Source files
  * Source files go in the Sources folder.
  * .shtml are source files but support basic templating under the format:
+
 `<template>
+
 NameOfTemplate
+
 var_name=var_val
+
 var2_name=var2_val
+
 </template>`
+
  * Notice, the new lines are important.
 
 # Template files
