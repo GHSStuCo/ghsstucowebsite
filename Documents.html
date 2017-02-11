@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GHS StuCo Documents and Comittees</title>
+	<link rel="icon" href="Resources/logo.png">
+	<link rel="stylesheet" href="Resources/Base.css">
+</head>
+<body>
+
+	<center>
+		<a href="Home.html">
+			<img src="Resources/header.png" class="header">
+		</a>
+		<div class="menu">
+			<ul>
+				<li class="leftitem"><a href="Home.html" >Home</a></li>
+				<li><a href="Members.html" >Members</a></li>
+				<li><a href="Documents.html" >Documents and Committees</a></li>
+				<li><a href="Suggestions.html" >Suggestion Form</a></li>
+			</ul>
+		</div>
+	</center>
+
+	
+	<p><b>Invisible Closet/Tiger Pack</b> (Reanna Campbell - Chair)</br>
+		Katie Cooper, Danica Nolton, Samuel Allen, Reanna Campbell, Summer Thomas, Elijah Willig, Julia Chamberland, Emma Harrington, Hope Nelson, Daniel Rebelsky</br></br>
+
+		<b>Green Committee</b> (Lucas Chamberland - Chair)</br>
+		Lucas Chamberland, Leah Ramsey, Oswaldo Ambrosio, Bethany Willig, Chloe Baumann, Julia Chamberland, Emma Harrington, Hope Nelson, Nehal Patel, Gillian Ferguson</br></br>
+
+		<b>Bulletin Board Committee</b> (Reanna Campbell - Chair)</br>
+		Reanna Campbell, Summer Thomas, Elijah Willig, Hope Nelson</br></br>
+
+		<b>Whirl Committee</b> (Mairead Brownell - Chair)</br>
+		Mairead Brownell, Bella Amador-Lacson, Bethany Stratford, Katie Cooper, Danica Nolton, Samuel Allen, Chloe Baumann, Emma Harrington, Reanna Campbell, Summer Thomas, Elijah Willig, Hope Nelson</br></br>
+
+		<b>Website/Publicity Committee</b> (Hans Larsson - Chair)</br>
+		Nehal Patel, Aidan Brownell, Hans Larsson, Daniel Rebelsky</br></p>
+		<table>
+			<tr>
+				<th></th>
+				<th>Name of Document</th>
+				<th>Link</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td class="googleimage docs"><a href="https://docs.google.com/a/grinnell-k12.org/document/d/1XYnSybtOJUsmXyLNC1symy0kVM259nRsAkyMdHQPAkQ/edit?usp=drive_web" target="_blank">
+				<img src="https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_document_x16.png">
+				</a></td>
+				<td class="wideelem docs"><a href="https://docs.google.com/a/grinnell-k12.org/document/d/1XYnSybtOJUsmXyLNC1symy0kVM259nRsAkyMdHQPAkQ/edit?usp=drive_web" target="_blank">Student Council Minutes</a></td>
+				<td class="button js-copy-Minutes-btn docs">Copy the link</td>
+				<td class="tabledescription docs">Minutes for the GHS Student Council</td>
+			</tr>
+			<tr>
+				<td class="googleimage docs">
+					<a href="https://docs.google.com/a/grinnell-k12.org/document/d/1E9VH3mW-6zGgp9b2t_FupJIS15XMGY_9OSUSOhw6g_A/edit?usp=drive_web" target="_blank">
+						<img src="https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_document_x16.png">
+						</a></td>
+					<td class="wideelem docs">
+						<a href="https://docs.google.com/a/grinnell-k12.org/document/d/1E9VH3mW-6zGgp9b2t_FupJIS15XMGY_9OSUSOhw6g_A/edit?usp=drive_web" target="_blank">
+							Student Council Agenda</a>
+						</td>
+						<td class="button js-copy-Agenda-btn docs">Copy the link</td>
+						<td class="tabledescription docs">Agenda for the GHS Student Council</td>
+					</tr>
+					<tr>
+						<td class="googleimage docs">
+							<a href="https://docs.google.com/a/grinnell-k12.org/document/d/1KDDjILHY6pWnmU9jea5eiR6CWESVQr2Ajcw9LniVviY/edit?usp=drive_web" target="_blank">
+								<img src="https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_document_x16.png">
+							</td>
+							<td class="wideelem docs"><a href="https://docs.google.com/a/grinnell-k12.org/document/d/1KDDjILHY6pWnmU9jea5eiR6CWESVQr2Ajcw9LniVviY/edit?usp=drive_web" target="_blank">Student Council Constitution</a></td>
+							<td class="button js-copy-Constitution-btn docs">Copy the link</td>
+							<td class="tabledescription docs">The constitution for the GHS Student Council </td>
+						</tr>
+					</table>
+
+
+
+					<script>
+						function copyTextToClipboard(text) {
+							var textArea = document.createElement("textarea");
+
+	//http://stackoverflow.com/a/30810322/6199137
+	textArea.style.position = 'fixed';
+	textArea.style.top = 0;
+	textArea.style.left = 0;
+	textArea.style.width = '2em';
+	textArea.style.height = '2em';
+	textArea.style.padding = 0;
+	textArea.style.border = 'none';
+	textArea.style.outline = 'none';
+	textArea.style.boxShadow = 'none';
+	textArea.style.background = 'transparent';
+
+	textArea.value = text;
+
+	document.body.appendChild(textArea);
+
+	textArea.select();
+
+	try {
+		document.execCommand('copy');
+	} catch (err) {
+		console.log('Oops, unable to copy');
+	}
+
+	document.body.removeChild(textArea);
+}
+
+
+var copy1Btn = document.querySelector('.js-copy-Minutes-btn'),
+copy2Btn = document.querySelector('.js-copy-Agenda-btn');
+copy3Btn = document.querySelector('.js-copy-Constitution-btn');
+
+copy1Btn.addEventListener('click', function(event) {
+	copyTextToClipboard('https://docs.google.com/a/grinnell-k12.org/document/d/1XYnSybtOJUsmXyLNC1symy0kVM259nRsAkyMdHQPAkQ/edit?usp=drive_web');
+});
+
+
+copy2Btn.addEventListener('click', function(event) {
+	copyTextToClipboard('https://docs.google.com/a/grinnell-k12.org/document/d/1E9VH3mW-6zGgp9b2t_FupJIS15XMGY_9OSUSOhw6g_A/edit?usp=drive_web');
+});
+
+copy3Btn.addEventListener('click', function(event) {
+	copyTextToClipboard('https://docs.google.com/a/grinnell-k12.org/document/d/1KDDjILHY6pWnmU9jea5eiR6CWESVQr2Ajcw9LniVviY/edit?usp=drive_web');
+});
+</script>
+</body>
+</html>
