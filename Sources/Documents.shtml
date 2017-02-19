@@ -2,6 +2,7 @@
 <template>
 header
 name=Documents and Comittees
+selected=documents
 </template>
 	
 	<p><b>Invisible Closet/Tiger Pack</b> (Reanna Campbell - Chair)</br>

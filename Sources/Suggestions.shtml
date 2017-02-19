@@ -1,6 +1,7 @@
 <template>
 header
 name=Suggestions
+selected=suggestions
 </template>
 	
 <center>	
