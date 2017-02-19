@@ -13,10 +13,10 @@
 		</a>
 		<div class="menu">
 			<ul>
-				<li class="leftitem"><a href="Home.html" >Home</a></li>
-				<li><a href="Members.html" >Members</a></li>
-				<li><a href="Documents.html" >Documents and Committees</a></li>
-				<li><a href="Suggestions.html" >Suggestion Form</a></li>
+				<li class="leftitem {if(selected==home)[selected][]}"><a href="Home.html" >Home</a></li>
+				<li><a {if(selected==members)[class="selected"][]} href="Members.html" >Members</a></li>
+				<li><a {if(selected==documents)[class="selected"][]} href="Documents.html" >Documents and Committees</a></li>
+				<li><a {if(selected==suggestion)[class="selected"][]} href="Suggestions.html" >Suggestion Form</a></li>
 			</ul>
 		</div>
 	</center>
