@@ -2,3 +2,5 @@ objects := $(patsubst ./Sources/%,%,$(patsubst %.shtml,%.html,$(wildcard ./Sourc
 all : $(objects)
 %.html: ./Sources/%.shtml ./Templates/header.thtml
 	python compile.py $@
+Members.html: ./Sources/Members.shtml ./Templates/header.thtml ./Templates/members.py ./Sources/members.txt
+	python compile.py $@
