@@ -15,7 +15,6 @@ def template(file):
     name = data[0]
     if (name == "exec"):
       template_data = subprocess.check_output("python ./Templates/"+data[1]+".py", shell=True)
-      #template_data = "Cash me outside how bow dah"
     else:
       for i in xrange(1, len(data)-1):
         cur_row = data[i].split("=")
