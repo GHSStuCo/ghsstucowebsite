@@ -10,7 +10,7 @@ members = members_string.split("\n")
 line = 0
 for member in xrange(0,len(members)):
   i = members[member]
-  print (member, i)
+  #print (member, i)
   #print("Member("+str(member)+", i[0]='"+i[0]+"'): "+i)
   if (i[0] != " "):
     if(i[0] == "*"):

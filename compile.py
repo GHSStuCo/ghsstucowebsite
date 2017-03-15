@@ -2,18 +2,14 @@ import sys
 import subprocess
 
 def template(file):
-  time = 0
-  while(file.find("<template>") != -1):
-    time += 1
-    if(time > 2):
-      return file
+  while(file.find("<template>") != -1): # While there are still templates
     start = file.find("<template>")
     end = file.find("</template>")
-    data = file[start+11:end]
+    data = file[start+11:end] # Ignore template tags in data (11 is the length of <template>)
     vars = {}
     data = data.split("\n")
     name = data[0]
-    if (name == "exec"):
+    if (name == "exec"): # If this an execute template
       template_data = subprocess.check_output("python ./Templates/"+data[1]+".py", shell=True)
     else:
       for i in xrange(1, len(data)-1):
@@ -21,9 +17,9 @@ def template(file):
         vars[cur_row[0]] = cur_row[1]
       template_file = open("./Templates/"+name+".thtml", "r")
       template_data = template_file.read()
-      for i in vars.keys():
+      for i in vars.keys(): # For every variable defined in the source file
         template_data = template_data.replace("{"+i+"}",vars[i])
-      while(template_data.find("{if") != -1):
+      while(template_data.find("{if") != -1): # As long as there are if statements left
         t_start = template_data.find("{if")
         t_end = template_data.find("}",t_start)
         test = template_data[template_data.find("(", t_start)+1 : template_data.find(")", t_start)]
