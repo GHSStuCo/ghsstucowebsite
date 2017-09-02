@@ -1,0 +1,9 @@
+{committee_template}
+		<b>{name}</b> {chair}</br>
+		{members}</br>
+{committee_template}
+{spacer}
+</br>
+
+
+{spacer}
