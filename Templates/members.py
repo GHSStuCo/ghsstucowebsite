@@ -8,6 +8,8 @@ members.close()
 member_file.close()
 members = members_string.split("\n")
 line = 0
+
+default_bio = "(No bio available)"
 for member in xrange(0,len(members)):
   i = members[member]
   #print (member, i)
@@ -29,7 +31,8 @@ for member in xrange(0,len(members)):
     if (line == 2):
       cur_member = cur_member.replace("{person}", i[1:])
     if (line == 3):
-      cur_member = cur_member.replace("{bio}", i[1:])
+      bio = default_bio if i.strip() == "" else i[1:]
+      cur_member = cur_member.replace("{bio}", bio)
       line = -1
       output += cur_member
     line += 1
