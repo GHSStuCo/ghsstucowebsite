@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GHS StuCo Calendar</title>
+	<link rel="icon" href="Resources/logo.png">
+	<link rel="stylesheet" href="Resources/base.css">
+</head>
+<body>
+
+	<center>
+		<a href="Home.html">
+			<img src="Resources/header.png" class="header">
+		</a>
+		<div class="menu">
+			<ul>
+				<li class="leftitem "><a href="Home.html" >Home</a></li>
+				<li><a  href="Members.html" >Members</a></li>
+				<li><a  href="Documents.html" >Documents and Committees</a></li>
+				<li><a class="selected" href="Calendar.html">Calendar</a></li>
+				<li><a  href="Suggestions.html" >Suggestion Form</a></li>
+			</ul>
+		</div>
+	</center>
+
+	<center style="margin-top: 30px">
+		<div class="loader"id="loader" style="display: block;"></div>
+		<iframe id="frameThing" style="display: none;" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=grinnell-k12.org_oscbk3s9uum2eclb0o9o2pb5i8%40group.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+	</center>
+
+	<script>
+		var myVar = setTimeout(showPage, 2000);
+
+		function showPage() {
+			document.getElementById("loader").style.display = "none";
+			document.getElementById("frameThing").style.display = "block";
+		}
+	</script>
+</body>
+</html>
