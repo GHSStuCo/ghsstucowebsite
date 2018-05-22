@@ -3,6 +3,9 @@ p{
 	margin-right: 7.5%;
 	margin-top: 2.5%;
 }
+::selection{
+	background: orange;
+}
 a{
 	color: black;
 
@@ -31,6 +34,24 @@ table p,table h2,table h3{
 }
 td{
 	vertical-align: top;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #FF9300;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 .docs, th {
     border-bottom: 1px solid #dddddd;
@@ -79,7 +100,7 @@ td{
 .members{
 	
 	width: 150px;
-	height: auto;
+	height: 188px;
 }
 .membersh1{
 	margin-right: 7.5%;
