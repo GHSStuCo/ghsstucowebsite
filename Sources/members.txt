@@ -26,10 +26,10 @@ Senior Class:|Senior
  Eli Ivanov
  Eli Ivanov is a representative from the junior class. In student council he is a member of the green committee and the mental health committee. Outside of student council he is involved in football and basketball.
 -
- Lane
+ Gillian
  Senior Class Representative
- Lane Thompson
- Lane is a representative of the junior class and part of the Green and Mental Health committees. He enjoys being apart of these committees because he is able to make a positive change at Grinnell High School!
+ Gillian Ferguson
+ 
 -
  Jose
  Senior Class Representative
@@ -41,10 +41,10 @@ Senior Class:|Senior
  Daniel Rebelsky
  
 -
- Gillian
+ Lane
  Senior Class Representative
- Gillian Ferguson
- 
+ Lane Thompson
+ Lane is a representative of the junior class and part of the Green and Mental Health committees. He enjoys being apart of these committees because he is able to make a positive change at Grinnell High School!
 *
 Junior Class:|Junior
 -
@@ -58,15 +58,20 @@ Junior Class:|Junior
  Bella Amador-Lacson
  Bella is chair of the Mental Health Committee. If you have any ideas you would like to be addressed by this committee, feel free to contact her!
 -
- Hans
+ Aidan
  Junior Class Representative
- Hans Larson
- Hans is a representative of the sophomore class. He is also a part of the golf team, and band. He says if you want anything brought up to student council just talk to him.
+ Aidan Brownell
+ 
 -
  Theresa
  Junior Class Representative
  Theresa Crawford
  
+-
+ Hans
+ Junior Class Representative
+ Hans Larson
+ Hans is a representative of the sophomore class. He is also a part of the golf team, and band. He says if you want anything brought up to student council just talk to him.
 *
 Sophomore Class:|Sophomore
 -
@@ -80,6 +85,11 @@ Sophomore Class:|Sophomore
  Tanner Alger
  Tanner Alger is a member of band, choir and swimming. He hopes to do more in the coming years and help GHS progress in anyway that he can.
 -
+ Cole
+ Sophomore Class Representative
+ Cole McGriff
+ Cole is a nice person, and he likes people. He is also a student athlete.
+-
  Payal
  Sophomore Class Representative
  Payal Patel
@@ -89,9 +99,4 @@ Sophomore Class:|Sophomore
  Sophomore Class Representative
  Eli Rose
  I like playing and watching sports. I tell worse jokes than my dad.
--
- Cole
- Sophomore Class Representative
- Cole McGriff
- Cole is a nice person, and he likes people. He is also a student athlete.
 *
