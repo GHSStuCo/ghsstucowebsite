@@ -17,8 +17,8 @@ def template(file):
         vars[cur_row[0]] = cur_row[1]
       template_file = open("./Templates/"+name+".thtml", "r")
       template_data = template_file.read()
-      for i in vars.keys(): # For every variable defined in the source file
-        template_data = template_data.replace("{"+i+"}",vars[i])
+      for var_name in vars.keys(): # For every variable defined in the source file
+        template_data = template_data.replace("{" + var_name + "}", vars[var_name])
       while(template_data.find("{if") != -1): # As long as there are if statements left
         t_start = template_data.find("{if")
         t_end = template_data.find("}",t_start)
@@ -35,11 +35,10 @@ def template(file):
   return file
 
 name = sys.argv[1].split(".")[0]
-inputF = open("./Sources/"+name+".shtml", "r")
-source = inputF.read()
-inputF.close()
+with open("./Sources/"+name+".shtml", "r") as file:
+  source = file.read()
+
 source = template(source)
-#open("./Templates/"+sys.argv[1]+".thtml", "w")
-outputF = open(name+".html", "w") 
-outputF.write(source)
-outputF.close()
+
+with open(name+".html", "w") as file:
+  file.write(source)
