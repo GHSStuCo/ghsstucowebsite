@@ -18,7 +18,7 @@
 				<li><a {if(selected==members)[class="selected"][]} href="Members.html" >Members</a></li>
 				<li><a {if(selected==documents)[class="selected"][]} href="Documents.html" >Documents and Committees</a></li>
 				<li><a {if(selected==calendar)[class="selected"][]} href="Calendar.html">Calendar</a></li>
-				<li><a {if(selected==suggestion)[class="selected"][]} href="Suggestions.html" >Suggestion Form</a></li>
+				<li><a {if(selected==suggestions)[class="selected"][]} href="Suggestions.html" >Suggestion Form</a></li>
 			</ul>
 		</div>
 	</center>
