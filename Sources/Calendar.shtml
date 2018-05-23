@@ -9,7 +9,7 @@ selected=calendar
 	</center>
 
 	<script>
-		var myVar = setTimeout(showPage, 2000);
+		document.getElementById("frameThing").onload = showPage;
 
 		function showPage() {
 			document.getElementById("loader").style.display = "none";
