@@ -35,10 +35,7 @@ def template(file):
   return file
 
 name = sys.argv[1].split(".")[0]
-with open("./Sources/"+name+".shtml", "r") as file:
-  source = file.read()
 
-source = template(source)
-
-with open(name+".html", "w") as file:
-  file.write(source)
+with open("./Sources/"+name+".shtml", "r") as input_file:
+  with open(name+".html", "w") as output_file:
+    output_file.write(template(input_file.read()))
