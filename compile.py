@@ -17,7 +17,7 @@ def template(file):
         vars[cur_row[0]] = cur_row[1]
       template_file = open("./Templates/"+name+".thtml", "r")
       template_data = template_file.read()
-      for var_name in vars.keys(): # For every variable defined in the source file
+      for var_name in vars.keys(): # For every variable defined in the source (.shtml) file
         template_data = template_data.replace("{" + var_name + "}", vars[var_name])
       while(template_data.find("{if") != -1): # As long as there are if statements left
         t_start = template_data.find("{if")
