@@ -20,22 +20,22 @@ def template(file):
       for var_name in vars.keys(): # For every variable defined in the source (.shtml) file
         template_data = template_data.replace("{" + var_name + "}", vars[var_name])
       while(template_data.find("{if") != -1): # As long as there are if statements left
-        t_start = template_data.find("{if")
-        t_end = template_data.find("}",t_start)
-        test = template_data[template_data.find("(", t_start)+1 : template_data.find(")", t_start)]
+        if_start = template_data.find("{if")
+        if_end = template_data.find("}",if_start)
+        test = template_data[template_data.find("(", if_start)+1 : template_data.find(")", if_start)]
         name, value = test.split("==")
         if (vars[name] == value):
-          replace_start = template_data.find("[", t_start)
-          replace_end = template_data.find("]", t_start)
+          replace_start = template_data.find("[", if_start)
+          replace_end = template_data.find("]", if_start)
         else:
-          replace_start = template_data.find("[", template_data.find("]", t_start))
+          replace_start = template_data.find("[", template_data.find("]", if_start))
           replace_end = template_data.find("]", replace_start)
-        template_data = template_data[:t_start] + template_data[replace_start+1:replace_end] + template_data[t_end+1:]
+        template_data = template_data[:if_start] + template_data[replace_start+1:replace_end] + template_data[if_end+1:]
     file = file[:start]+template_data+file[end+11:]
   return file
 
-name = sys.argv[1].split(".")[0]
+file_name = sys.argv[1].split(".")[0]
 
-with open("./Sources/"+name+".shtml", "r") as input_file:
-  with open(name+".html", "w") as output_file:
+with open("./Sources/"+file_name+".shtml", "r") as input_file:
+  with open(file_name+".html", "w") as output_file:
     output_file.write(template(input_file.read()))
